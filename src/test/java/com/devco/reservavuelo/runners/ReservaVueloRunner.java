@@ -8,7 +8,8 @@ import org.junit.runner.RunWith;
 @RunWith(CucumberWithSerenity.class)
 @CucumberOptions (features = "src/test/resources/features/realizar_reserva_vuelo_avianca.feature",
     tags = "@Escenario1",
-    snippets = SnippetType.CAMELCASE)
+    snippets = SnippetType.CAMELCASE,
+    glue = "com.devco.reservavuelo/stepdefinitions")
 
 public class ReservaVueloRunner {
 
