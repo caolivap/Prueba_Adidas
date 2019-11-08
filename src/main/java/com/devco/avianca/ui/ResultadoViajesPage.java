@@ -2,34 +2,22 @@ package com.devco.avianca.ui;
 
 import java.util.List;
 import java.util.stream.Collectors;
-import net.serenitybdd.core.annotations.findby.FindBy;
-import net.serenitybdd.screenplay.targets.BaseTarget;
-import net.serenitybdd.screenplay.targets.Target;
 import net.thucydides.core.pages.PageObject;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 
 public class ResultadoViajesPage extends PageObject {
 
-  public static final Target VUELOS = Target.the("Los resultados de los vuelos").
-      locatedBy("//div[@class and @data-flightid]");
+  private static final String TABLA_VUELOS = "//div[@id='tpl3_upsell-bound0']";
+  private static final String VUELOS = "//div[contains(@id,'tpl3_price-fareGroup0-bound0-row')]//span[contains(@class,'cell-reco-bestprice-integer')]";
 
-  public static final Target TABLA_VUELOS = Target.the("Tabla que contiene los vuelos").
-      locatedBy("//div[@id='tpl3_upsell-bound0']");
-
-  @FindBy(
-      xpath = "//div[@id='tpl3_upsell-bound0']"
-  )
-  private List<WebElement> lstViajes;
-
-  public List<WebElement> getLstViajes() {
-    return lstViajes
-        .stream()
-        .map(
-            element ->
-                element
-                    .findElement(
-                        By.xpath("//div[@class='bound-table-flightline-details']"))
-        ).collect(Collectors.toList());
+  public List<String> getLstViajes() {
+    WebElement table = this.getDriver().findElement(By.xpath(TABLA_VUELOS));
+    List<WebElement> lstWe = table.findElements(By.xpath(VUELOS));
+    return lstWe.stream()
+                .map(
+                    element ->
+                        element.getText()
+                ).collect(Collectors.toList());
   }
 }

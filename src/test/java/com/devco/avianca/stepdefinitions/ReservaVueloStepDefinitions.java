@@ -42,8 +42,6 @@ public class ReservaVueloStepDefinitions {
         Elegir.SoloViajeDeIda(),
         IngresarDatos.deVuelo(ciudadOrigen, ciudadDestino, fechaVuelo),
         Consultar.Vuelos());
-    //TODO convertir el número de días a una fecha con el formato adecuado
-
   }
 
   @Entonces("^se obtienen los vuelos disponibles para esa fecha$")
