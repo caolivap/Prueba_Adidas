@@ -34,8 +34,8 @@ public class ReservaVueloStepDefinitions {
     carlos.wasAbleTo(Abrir.LaPaginaDeAvianca());
   }
 
-  @Cuando("^busca vuelos (.*) desde (.*) hacia (.*) para dentro de (.*) días$")
-  public void buscaVuelosDeIdaDesdeOrigenHaciaDestino(String tipoViaje, String ciudadOrigen, String ciudadDestino,
+  @Cuando("^busca vuelos solo de ida desde (.*) hacia (.*) para dentro de (.*) días$")
+  public void buscaVuelosDeIdaDesdeOrigenHaciaDestino(String ciudadOrigen, String ciudadDestino,
       int dias) throws ParseException {
     String fechaVuelo = UtilidadesFechas.obtenerFechaDeVuelo(dias);
     carlos.attemptsTo(
