@@ -1,6 +1,6 @@
-package com.devco.reservavuelo.utils;
+package com.devco.avianca.utils;
 
-import static com.devco.reservavuelo.utils.EnumConstantes.FORMATO_FECHA_YYYY_MM__DD;
+import static com.devco.avianca.utils.EnumConstantes.FORMATO_FECHA_YYYY_MM__DD;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
@@ -8,7 +8,6 @@ import java.util.Calendar;
 import java.util.GregorianCalendar;
 import net.thucydides.core.pages.PageObject;
 import org.joda.time.DateTime;
-import org.openqa.selenium.WebDriver;
 
 public class UtilidadesFechas extends PageObject {
   private Calendar cal = new GregorianCalendar();

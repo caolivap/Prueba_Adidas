@@ -1,7 +1,7 @@
-package com.devco.reservavuelo.tasks;
+package com.devco.avianca.tasks;
 
 
-import com.devco.reservavuelo.ui.AviancaHomePage;
+import com.devco.avianca.ui.AviancaHomePage;
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Task;
 import net.serenitybdd.screenplay.Tasks;

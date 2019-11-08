@@ -1,4 +1,4 @@
-package com.devco.reservavuelo.runners;
+package com.devco.avianca.runners;
 
 import cucumber.api.CucumberOptions;
 import cucumber.api.SnippetType;
@@ -9,7 +9,7 @@ import org.junit.runner.RunWith;
 @CucumberOptions (features = "src/test/resources/features/realizar_reserva_vuelo_avianca.feature",
     tags = "@Escenario1",
     snippets = SnippetType.CAMELCASE,
-    glue = "com.devco.reservavuelo/stepdefinitions")
+    glue = "com.devco.avianca/stepdefinitions")
 
 public class ReservaVueloRunner {
 

@@ -1,17 +1,13 @@
-package com.devco.reservavuelo.interactions;
+package com.devco.avianca.interactions;
 
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Interaction;
-import net.serenitybdd.screenplay.Performable;
 import net.serenitybdd.screenplay.abilities.BrowseTheWeb;
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.remote.RemoteWebDriver;
 
 public class Cambiar implements Interaction {
 
   private String xpathElemento;
-  //private WebDriver;
 
   Cambiar(){}
 

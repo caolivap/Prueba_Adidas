@@ -1,11 +1,11 @@
-package com.devco.reservavuelo.stepdefinitions;
+package com.devco.avianca.stepdefinitions;
 
-import com.devco.reservavuelo.tasks.Abrir;
-import com.devco.reservavuelo.tasks.Consultar;
-import com.devco.reservavuelo.tasks.Elegir;
-import com.devco.reservavuelo.tasks.IngresarDatos;
-import com.devco.reservavuelo.ui.ResultadoViajesPage;
-import com.devco.reservavuelo.utils.UtilidadesFechas;
+import com.devco.avianca.tasks.Abrir;
+import com.devco.avianca.tasks.Consultar;
+import com.devco.avianca.tasks.Elegir;
+import com.devco.avianca.tasks.IngresarDatos;
+import com.devco.avianca.ui.ResultadoViajesPage;
+import com.devco.avianca.utils.UtilidadesFechas;
 import cucumber.api.java.Before;
 import cucumber.api.java.es.Cuando;
 import cucumber.api.java.es.Dado;
