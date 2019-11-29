@@ -10,7 +10,6 @@ public class Resultados implements Question<Boolean> {
     @Override
     public Boolean answeredBy(Actor actor) {
         return PRECIOS.resolveFor(actor).isCurrentlyVisible();
-        //return Text.of(PRECIOS).viewedBy(actor).asString() != null;
     }
 
     public static Question deTenis() {
