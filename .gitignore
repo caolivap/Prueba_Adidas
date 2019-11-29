@@ -25,7 +25,6 @@ hs_err_pid*
 
 #Gradle files:
 log/
-gradle/
 target/
 hooks/pre-push
 
