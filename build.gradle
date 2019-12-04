@@ -23,7 +23,7 @@ tasks.withType(Test) {
     systemProperty "file.encoding", "UTF-8"
 }
 
-group 'ReservaVuelo'
+group 'Adidas'
 version '1.0-SNAPSHOT'
 
 sourceCompatibility = 1.8
