@@ -5,7 +5,7 @@ import net.serenitybdd.screenplay.targets.Target;
 public class AdidasHomePage {
 
     public static final Target LINK_SECCION_HOMBRES = Target.the("Link sección de hombres").locatedBy(
-            "//a[contains(text(),'HOMBRES')]");
+            "//a[contains(text(),'HOMBRE')]");
 
     public static final Target LINK_CALZADO = Target.the("Link calzado").locatedBy(
             "//a[contains(text(),'Calzado')]");
@@ -21,7 +21,4 @@ public class AdidasHomePage {
 
     public static final Target PRECIOS = Target.the("Precios de los resultados encontrados").locatedBy(
             "//span[contains(@class,'gl-price__value')]");
-
-
-
 }
